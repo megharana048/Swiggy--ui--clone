@@ -3,21 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Food Delivery Website</title>
+  <title>Swiggy UI Clone</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
 
   <header class="navbar">
-    <div class="logo">Swiggy</div>
+    <div class="nav-left">
+      <div class="brand">
+        <div class="brand-icon">
+          <span>🍴</span>
+        </div>
+        <div class="brand-name">Swiggy</div>
+      </div>
 
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search restaurants..." />
+      <div class="home-location">
+        <span class="home-link">HOME</span>
+
+        <span class="location-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
+          </svg>
+        </span>
+
+        <span class="location-text">Unnamed Road, Block WE, Mohan...</span>
+        <span class="down-arrow">⌄</span>
+      </div>
     </div>
 
-    <div class="cart" onclick="toggleCart()">
-      🛒 Cart <span id="cartCount">0</span>
+    <div class="nav-right">
+      <div class="nav-item">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 7h16v13H4V7zm3-4h10l2 4H5l2-4zm2 2-.7 2h7.4L15 5H9z"/>
+          </svg>
+        </span>
+        <span>Swiggy Corporate</span>
+      </div>
+
+      <div class="nav-search">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M10 2a8 8 0 105.3 14l4.4 4.4 1.4-1.4-4.4-4.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
+          </svg>
+        </span>
+        <input type="text" id="searchInput" placeholder="Search restaurants..." />
+      </div>
+
+      <div class="nav-item">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 12v8H4v-8H2V8h4.2C5.5 7.4 5 6.6 5 5.7 5 4.2 6.2 3 7.7 3c1.4 0 2.5 1 4.3 3.1C13.8 4 14.9 3 16.3 3 17.8 3 19 4.2 19 5.7c0 .9-.5 1.7-1.2 2.3H22v4h-2zM6 18h5v-6H6v6zm7 0h5v-6h-5v6zM7.7 5C7.3 5 7 5.3 7 5.7c0 .7.8 1.2 2.8 1.2C8.8 5.7 8.2 5 7.7 5zm8.6 0c-.5 0-1.1.7-2.1 1.9 2 0 2.8-.5 2.8-1.2 0-.4-.3-.7-.7-.7z"/>
+          </svg>
+        </span>
+        <span>Offers</span>
+        <span class="new-tag">NEW</span>
+      </div>
+
+      <div class="nav-item">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 17a7 7 0 110-14 7 7 0 010 14zm-1-4h2v2h-2v-2zm1-9c-2 0-3.5 1.2-3.5 3h2c0-.7.6-1.2 1.4-1.2.9 0 1.5.5 1.5 1.3 0 .7-.4 1-1.2 1.5-1.2.7-1.8 1.5-1.8 3h1.9c0-.8.3-1.2 1.2-1.7 1.1-.7 2-1.4 2-2.8C15.5 7.2 14 6 12 6z"/>
+          </svg>
+        </span>
+        <span>Help</span>
+      </div>
+
+      <div class="nav-item">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5z"/>
+          </svg>
+        </span>
+        <span>Profile</span>
+      </div>
+
+      <div class="nav-item cart" onclick="toggleCart()">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M7 18c-1.1 0-1.9.9-1.9 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14.5h8.9c.8 0 1.5-.4 1.8-1.1L21 6H6.2L5.7 4H2V2h5.2l1 4H21l-3.4 8.1c-.3.8-1.1 1.4-2 1.4H8.1L7 17h12v2H6.9c-1.5 0-2.5-1.6-1.8-2.9l2.1-1.6z"/>
+          </svg>
+        </span>
+        <span>Cart</span>
+        <span id="cartCount">0</span>
+      </div>
     </div>
   </header>
 
@@ -64,6 +134,11 @@
       <div class="category-card">
         <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&auto=format&fit=crop" alt="Dessert">
         <p>Dessert</p>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=400&auto=format&fit=crop" alt="Momos">
+        <p>Momos</p>
       </div>
     </div>
   </section>
@@ -163,8 +238,180 @@
         </div>
       </div>
 
+      <div class="restaurant-card" data-name="Tandoori Nights">
+        <div class="image-box">
+          <span class="sale-tag">30% OFF</span>
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&auto=format&fit=crop" alt="Tandoori Nights">
+        </div>
+        <div class="card-content">
+          <h3>Tandoori Nights</h3>
+          <p class="rating">⭐ 4.3 • 32 mins</p>
+          <p>Tandoori, North Indian</p>
+          <p class="timer">Popular tonight</p>
+          <p>₹220 for one</p>
+          <button onclick="addToCart('Tandoori Nights', 220)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Healthy Bowl">
+        <div class="image-box">
+          <span class="veg-tag">HEALTHY</span>
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&fit=crop" alt="Healthy Bowl">
+        </div>
+        <div class="card-content">
+          <h3>Healthy Bowl</h3>
+          <p class="rating">⭐ 4.7 • 22 mins</p>
+          <p>Salads, Healthy Food</p>
+          <p class="fresh">Fresh and healthy</p>
+          <p>₹190 for one</p>
+          <button onclick="addToCart('Healthy Bowl', 190)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Rolls Mania">
+        <div class="image-box">
+          <span class="sale-tag">HOT</span>
+          <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&auto=format&fit=crop" alt="Rolls Mania">
+        </div>
+        <div class="card-content">
+          <h3>Rolls Mania</h3>
+          <p class="rating">⭐ 4.2 • 26 mins</p>
+          <p>Rolls, Wraps</p>
+          <p class="timer">Best seller</p>
+          <p>₹130 for one</p>
+          <button onclick="addToCart('Rolls Mania', 130)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Cafe Coffee Day">
+        <div class="image-box">
+          <span class="sale-tag">NEW</span>
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&auto=format&fit=crop" alt="Cafe Coffee Day">
+        </div>
+        <div class="card-content">
+          <h3>Cafe Coffee Day</h3>
+          <p class="rating">⭐ 4.3 • 15 mins</p>
+          <p>Coffee, Snacks</p>
+          <p class="timer">Quick bites</p>
+          <p>₹140 for one</p>
+          <button onclick="addToCart('Cafe Coffee Day', 140)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Ice Cream Studio">
+        <div class="image-box">
+          <span class="veg-tag">FRESH</span>
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&auto=format&fit=crop" alt="Ice Cream Studio">
+        </div>
+        <div class="card-content">
+          <h3>Ice Cream Studio</h3>
+          <p class="rating">⭐ 4.8 • 16 mins</p>
+          <p>Ice Cream, Desserts</p>
+          <p class="fresh">Fresh desserts</p>
+          <p>₹110 for one</p>
+          <button onclick="addToCart('Ice Cream Studio', 110)">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Momo Nation">
+        <div class="image-box">
+          <span class="sale-tag">25% OFF</span>
+          <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=600&auto=format&fit=crop" alt="Momo Nation">
+        </div>
+        <div class="card-content">
+          <h3>Momo Nation</h3>
+          <p class="rating">⭐ 4.1 • 24 mins</p>
+          <p>Momos, Street Food</p>
+          <p class="timer">Limited-time offer</p>
+          <p>₹125 for one</p>
+          <button onclick="addToCart('Momo Nation', 125)">Add to Cart</button>
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="app-download">
+      <h2>For better experience, download the Swiggy app now</h2>
+
+      <div class="store-buttons">
+        <div class="store-btn">
+          <span>▶</span>
+          <div>
+            <p>GET IT ON</p>
+            <h3>Google Play</h3>
+          </div>
+        </div>
+
+        <div class="store-btn">
+          <span></span>
+          <div>
+            <p>Download on the</p>
+            <h3>App Store</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2><span class="footer-icon">S</span> Swiggy</h2>
+        <p>© 2026 Swiggy Limited</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <a href="#">About Us</a>
+        <a href="#">Swiggy Corporate</a>
+        <a href="#">Careers</a>
+        <a href="#">Team</a>
+        <a href="#">Swiggy One</a>
+        <a href="#">Swiggy Instamart</a>
+        <a href="#">Swiggy Dineout</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact us</h3>
+        <a href="#">Help & Support</a>
+        <a href="#">Partner with us</a>
+        <a href="#">Ride with us</a>
+
+        <h3 class="footer-subtitle">Legal</h3>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Investor Relations</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Available in:</h3>
+        <a href="#">Bangalore</a>
+        <a href="#">Gurgaon</a>
+        <a href="#">Hyderabad</a>
+        <a href="#">Delhi</a>
+        <a href="#">Mumbai</a>
+        <a href="#">Pune</a>
+        <button class="city-btn">679 cities</button>
+      </div>
+
+      <div class="footer-column">
+        <h3>Life at Swiggy</h3>
+        <a href="#">Explore with Swiggy</a>
+        <a href="#">Swiggy News</a>
+        <a href="#">Snackables</a>
+
+        <h3 class="footer-subtitle">Social Links</h3>
+        <div class="social-links">
+          <span>in</span>
+          <span>◎</span>
+          <span>f</span>
+          <span>𝕏</span>
+          <span>▶</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
