@@ -14,7 +14,7 @@
 
       <div class="nav-left">
         <div class="swiggy-logo">
-          <img src="swiggy-logo.png" alt="Swiggy Logo">
+          <img src="./swiggy-logo.png" alt="Swiggy Logo">
         </div>
 
         <div class="location-box">
@@ -24,29 +24,50 @@
       </div>
 
       <div class="nav-right">
+
         <div class="nav-item">
-          <span class="nav-icon">▣</span>
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 7V5.8C7 4.25 8.25 3 9.8 3h4.4C15.75 3 17 4.25 17 5.8V7h1.5C19.33 7 20 7.67 20 8.5v10c0 .83-.67 1.5-1.5 1.5h-13C4.67 20 4 19.33 4 18.5v-10C4 7.67 4.67 7 5.5 7H7zm2 0h6V5.8c0-.44-.36-.8-.8-.8H9.8c-.44 0-.8.36-.8.8V7zm-3 2v9h12V9H6z"/>
+            </svg>
+          </span>
           <span>Swiggy Corporate</span>
         </div>
 
         <div class="nav-item search-nav">
-          <span class="nav-icon">⌕</span>
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M10.5 4C6.9 4 4 6.9 4 10.5S6.9 17 10.5 17c1.55 0 2.97-.54 4.08-1.45l4.18 4.18 1.41-1.41-4.18-4.18A6.46 6.46 0 0017 10.5C17 6.9 14.1 4 10.5 4zm0 2C13 6 15 8 15 10.5S13 15 10.5 15 6 13 6 10.5 8 6 10.5 6z"/>
+            </svg>
+          </span>
           <input type="text" id="searchInput" placeholder="Search">
         </div>
 
         <div class="nav-item">
-          <span class="nav-icon">⊛</span>
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.75l2.18 1.52 2.64-.26 1.08 2.43 2.43 1.08-.26 2.64L21.6 12l-1.53 2.18.26 2.64-2.43 1.08-1.08 2.43-2.64-.26L12 21.6l-2.18-1.53-2.64.26-1.08-2.43-2.43-1.08.26-2.64L2.4 12l1.53-2.18-.26-2.64L6.1 6.1l1.08-2.43 2.64.26L12 2.75zm-2.3 6.05a1.4 1.4 0 100 2.8 1.4 1.4 0 000-2.8zm4.6 3.6a1.4 1.4 0 100 2.8 1.4 1.4 0 000-2.8zm-5.15 3.2l6.45-6.45-1.05-1.05-6.45 6.45 1.05 1.05z"/>
+            </svg>
+          </span>
           <span>Offers</span>
           <span class="new-tag">NEW</span>
         </div>
 
         <div class="nav-item">
-          <span class="nav-icon">?</span>
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 2a7 7 0 110 14 7 7 0 010-14zm-3.4 4.6c.35-1.75 1.75-2.9 3.55-2.9 2.05 0 3.45 1.25 3.45 3.05 0 1.35-.7 2.1-1.75 2.75-.85.53-1.1.85-1.1 1.6v.25h-1.9v-.35c0-1.35.55-2.05 1.65-2.75.82-.52 1.2-.9 1.2-1.6 0-.75-.6-1.25-1.55-1.25-.9 0-1.5.55-1.72 1.5l-1.83-.3zM10.75 16h2.1v2h-2.1v-2z"/>
+            </svg>
+          </span>
           <span>Help</span>
         </div>
 
         <div class="nav-item">
-          <span class="nav-icon">♟</span>
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 12.25c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-3.25 0-6.5 1.55-6.5 4.25V20h13v-1.5c0-2.7-3.25-4.25-6.5-4.25z"/>
+            </svg>
+          </span>
           <span>Megha</span>
         </div>
 
@@ -54,18 +75,15 @@
           <span class="cart-box-icon">0</span>
           <span>Cart</span>
         </div>
-      </div>
 
+      </div>
     </div>
   </header>
 
   <div class="scroll-navbar" id="scrollNavbar">
     <div class="scroll-navbar-inner">
-
       <div class="sort-wrapper">
-        <button class="sort-btn" onclick="toggleSortDropdown()">
-          Sort By <span>⌄</span>
-        </button>
+        <button class="sort-btn" onclick="toggleSortDropdown()">Sort By <span>⌄</span></button>
 
         <div class="sort-dropdown" id="sortDropdown">
           <label class="sort-option">
@@ -101,7 +119,6 @@
         <input type="text" id="scrollSearchInput" placeholder="Search for restaurant and food">
         <span>⌕</span>
       </div>
-
     </div>
   </div>
 
@@ -127,7 +144,6 @@
     </div>
 
     <div class="category-container" id="categoryContainer">
-
       <div class="category-card">
         <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&auto=format&fit=crop" alt="North Indian">
         <p>North Indian</p>
@@ -177,7 +193,6 @@
         <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&auto=format&fit=crop" alt="Rolls">
         <p>Rolls</p>
       </div>
-
     </div>
   </section>
 
@@ -447,7 +462,7 @@
       <div class="footer-brand">
         <div class="footer-logo-row">
           <div class="footer-logo">
-            <img src="swiggy-logo.png" alt="Swiggy Logo">
+            <img src="./swiggy-logo.png" alt="Swiggy Logo">
           </div>
           <h2>Swiggy</h2>
         </div>

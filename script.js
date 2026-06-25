@@ -132,12 +132,6 @@ function applySort() {
     });
   }
 
-  if (selectedSort === "default") {
-    cardsArray.sort(function(a, b) {
-      return 0;
-    });
-  }
-
   cardsArray.forEach(function(card) {
     restaurantGrid.appendChild(card);
   });
