@@ -315,7 +315,7 @@ img {
   text-align: right;
 }
 
-/* CATEGORIES */
+/* HOME CATEGORIES */
 
 .categories {
   max-width: 1200px;
@@ -476,6 +476,80 @@ img {
   align-items: center;
   justify-content: center;
   font-size: 13px;
+}
+
+/* SEARCH PAGE */
+
+.search-page {
+  max-width: 1050px;
+  margin: 45px auto;
+  padding: 0 24px;
+}
+
+.big-search-box {
+  width: 100%;
+  height: 58px;
+  border: 1px solid #d4d5d9;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  margin-bottom: 50px;
+  background: #ffffff;
+}
+
+.big-search-box input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3d4152;
+}
+
+.big-search-box input::placeholder {
+  color: #686b78;
+}
+
+.big-search-box span {
+  font-size: 24px;
+  color: #3d4152;
+}
+
+.search-page h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 34px;
+  color: #02060c;
+}
+
+.popular-cuisines {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 34px 28px;
+  align-items: start;
+}
+
+.popular-cuisine {
+  text-align: center;
+  cursor: pointer;
+}
+
+.popular-cuisine img {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 12px;
+  box-shadow: 0 6px 16px rgba(40, 44, 63, 0.16);
+}
+
+.popular-cuisine p {
+  font-size: 17px;
+  font-weight: 600;
+  color: #3d4152;
+  line-height: 1.2;
 }
 
 /* FOOTER */
@@ -1261,6 +1335,10 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .popular-cuisines {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
   .dineout-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1307,6 +1385,31 @@ img {
   .footer-app-section {
     flex-direction: column;
     text-align: center;
+  }
+
+  .search-page {
+    max-width: 760px;
+    margin: 35px auto;
+    padding: 0 18px;
+  }
+
+  .big-search-box {
+    height: 54px;
+    margin-bottom: 42px;
+  }
+
+  .popular-cuisines {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 22px;
+  }
+
+  .popular-cuisine img {
+    width: 82px;
+    height: 82px;
+  }
+
+  .popular-cuisine p {
+    font-size: 15px;
   }
 
   .corporate-nav {
@@ -1465,6 +1568,44 @@ img {
 
   .app-buttons {
     flex-direction: column;
+  }
+
+  .search-page {
+    margin: 24px auto;
+    padding: 0 14px;
+  }
+
+  .big-search-box {
+    height: 48px;
+    margin-bottom: 32px;
+    padding: 0 14px;
+  }
+
+  .big-search-box input {
+    font-size: 14px;
+  }
+
+  .big-search-box span {
+    font-size: 20px;
+  }
+
+  .search-page h2 {
+    font-size: 22px;
+    margin-bottom: 26px;
+  }
+
+  .popular-cuisines {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px 14px;
+  }
+
+  .popular-cuisine img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .popular-cuisine p {
+    font-size: 14px;
   }
 
   .corporate-nav {
@@ -1652,6 +1793,15 @@ img {
 
   .map-point h3 {
     font-size: 13px;
+  }
+
+  .popular-cuisines {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popular-cuisine img {
+    width: 78px;
+    height: 78px;
   }
 
   .dineout-banner h1 {
