@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help & Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="blue-page">
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html" class="swiggy-logo">
+          <img src="swiggy-logo.png" alt="">
+        </a>
+        <span class="page-title-label">HELP</span>
+      </div>
+
+      <nav class="nav-right">
+        <a href="corporate.html" class="nav-item">▣ Swiggy Corporate</a>
+        <a href="search.html" class="nav-item">⌕ Search</a>
+        <a href="offers.html" class="nav-item">⊛ Offers <span class="new-tag">NEW</span></a>
+        <a href="help.html" class="nav-item active">☻ Help</a>
+        <a href="profile.html" class="nav-item">♙ Megha</a>
+        <a href="cart.html" class="nav-item"><span class="cart-box-icon">0</span>Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="blue-header">
+    <h1>Help & Support</h1>
+    <p>Let's take a step ahead and help you better.</p>
+  </section>
+
+  <main class="support-panel">
+    <aside class="support-sidebar">
+      <div class="support-tab active" onclick="filterHelp('Help with orders')">Help with orders</div>
+      <div class="support-tab" onclick="filterHelp('Swiggy One FAQs')">Swiggy One FAQs</div>
+      <div class="support-tab" onclick="filterHelp('General issues')">General issues</div>
+      <div class="support-tab" onclick="filterHelp('Partner Onboarding')">Partner Onboarding</div>
+      <div class="support-tab" onclick="filterHelp('Report Safety Emergency')">Report Safety Emergency</div>
+      <div class="support-tab" onclick="filterHelp('Instamart Onboarding')">Instamart Onboarding</div>
+      <div class="support-tab" onclick="filterHelp('Legal, Terms & Conditions')">Legal, Terms & Conditions</div>
+      <div class="support-tab" onclick="filterHelp('FAQs')">FAQs</div>
+    </aside>
+
+    <section class="support-content">
+      <div>
+        <p class="orange-hand" id="helpText">Your orders with Swiggy will be listed here.</p>
+        <div class="no-order-cat">😎</div>
+        <h2 id="helpTitle">No Orders</h2>
+        <p>You haven't placed any order yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
