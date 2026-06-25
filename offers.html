@@ -3,30 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offers</title>
+  <title>Offers - Swiggy Clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav class="offers-top-nav">
     <div class="offers-top-inner">
+
       <a href="index.html" class="full-logo">
-        <img src="swiggy-logo.png" alt="">
+        <img src="swiggy-logo.png" alt="Swiggy Logo">
         <span>Swiggy</span>
       </a>
 
-      <div class="location-setup">📍 Setup your precise location⌄</div>
+      <div class="location-setup">
+        <span class="location-icon">📍</span>
+        <span>Setup your precise location</span>
+        <span class="location-arrow">⌄</span>
+      </div>
 
       <div class="top-search">
         <input type="text" placeholder="Search for restaurant and food">
         <span>⌕</span>
       </div>
 
-      <div class="profile-circle">●</div>
+      <a href="profile.html" class="profile-circle">●</a>
+
     </div>
   </nav>
 
   <main class="offers-wrapper">
+
     <section class="dineout-banner">
       <div class="dineout-label">▣ Dineout</div>
       <h1>Restaurants With Great Offers Near Me</h1>
@@ -38,39 +45,91 @@
     </div>
 
     <div class="filter-row">
-      <button class="filter-pill">1 Filter ☰</button>
+      <button class="filter-pill active-filter">1 Filter ☰</button>
       <button class="filter-pill">Sort By⌄</button>
       <button class="filter-pill">Book a table</button>
       <button class="filter-pill">Within 5km</button>
       <button class="filter-pill">Rating 4+</button>
       <button class="filter-pill">Pure Veg</button>
+      <button class="filter-pill">Serves Alcohol</button>
     </div>
 
-    <div class="dineout-grid">
+    <section class="dineout-grid">
+
       <div class="dineout-card">
         <div class="dineout-img">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&auto=format&fit=crop" alt="">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop" alt="Openhouse Cafe">
+          <span class="dineout-rating">★ 4.1</span>
           <div class="dineout-name">Openhouse Cafe</div>
         </div>
-        <div class="dineout-content">Continental • North Indian <span>₹2000 for two</span></div>
+        <div class="dineout-content">
+          <p>Continental • North Indian</p>
+          <p>₹2000 for two</p>
+        </div>
       </div>
 
       <div class="dineout-card">
         <div class="dineout-img">
-          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&auto=format&fit=crop" alt="">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop" alt="Warehouse Cafe">
+          <span class="dineout-rating">★ 4.1</span>
           <div class="dineout-name">Warehouse Cafe</div>
         </div>
-        <div class="dineout-content">Asian • North Indian <span>₹2000 for two</span></div>
+        <div class="dineout-content">
+          <p>Asian • North Indian</p>
+          <p>₹2000 for two</p>
+        </div>
       </div>
 
       <div class="dineout-card">
         <div class="dineout-img">
-          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=700&auto=format&fit=crop" alt="">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&auto=format&fit=crop" alt="My Bar Square">
+          <span class="dineout-rating">★ 4.0</span>
           <div class="dineout-name">My Bar Square</div>
         </div>
-        <div class="dineout-content">Chinese • North Indian <span>₹1400 for two</span></div>
+        <div class="dineout-content">
+          <p>Chinese • North Indian</p>
+          <p>₹1400 for two</p>
+        </div>
       </div>
-    </div>
+
+      <div class="dineout-card">
+        <div class="dineout-img">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&auto=format&fit=crop" alt="The Sky Lounge">
+          <span class="dineout-rating">★ 4.3</span>
+          <div class="dineout-name">The Sky Lounge</div>
+        </div>
+        <div class="dineout-content">
+          <p>Italian • Continental</p>
+          <p>₹1800 for two</p>
+        </div>
+      </div>
+
+      <div class="dineout-card">
+        <div class="dineout-img">
+          <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&auto=format&fit=crop" alt="Cafe Delhi Heights">
+          <span class="dineout-rating">★ 4.2</span>
+          <div class="dineout-name">Cafe Delhi Heights</div>
+        </div>
+        <div class="dineout-content">
+          <p>North Indian • Cafe</p>
+          <p>₹1600 for two</p>
+        </div>
+      </div>
+
+      <div class="dineout-card">
+        <div class="dineout-img">
+          <img src="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?w=800&auto=format&fit=crop" alt="The Big Chill">
+          <span class="dineout-rating">★ 4.5</span>
+          <div class="dineout-name">The Big Chill</div>
+        </div>
+        <div class="dineout-content">
+          <p>Italian • Desserts</p>
+          <p>₹2200 for two</p>
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
 </body>
