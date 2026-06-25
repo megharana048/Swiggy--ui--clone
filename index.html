@@ -10,86 +10,100 @@
 <body>
 
   <header class="navbar">
-    <div class="nav-left">
-      <div class="brand">
-        <div class="brand-icon">
-          <span>🍴</span>
+    <div class="nav-container">
+
+      <div class="nav-left">
+        <div class="swiggy-logo">
+          <img src="swiggy-logo.png" alt="Swiggy Logo">
         </div>
-        <div class="brand-name">Swiggy</div>
+
+        <div class="location-box">
+          <span class="location-name">Other</span>
+          <span class="down-arrow">⌄</span>
+        </div>
       </div>
 
-      <div class="home-location">
-        <span class="home-link">HOME</span>
+      <div class="nav-right">
+        <div class="nav-item">
+          <span class="nav-icon">▣</span>
+          <span>Swiggy Corporate</span>
+        </div>
 
-        <span class="location-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
-          </svg>
-        </span>
+        <div class="nav-item search-nav">
+          <span class="nav-icon">⌕</span>
+          <input type="text" id="searchInput" placeholder="Search">
+        </div>
 
-        <span class="location-text">Unnamed Road, Block WE, Mohan...</span>
-        <span class="down-arrow">⌄</span>
-      </div>
-    </div>
+        <div class="nav-item">
+          <span class="nav-icon">⊛</span>
+          <span>Offers</span>
+          <span class="new-tag">NEW</span>
+        </div>
 
-    <div class="nav-right">
-      <div class="nav-item">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M4 7h16v13H4V7zm3-4h10l2 4H5l2-4zm2 2-.7 2h7.4L15 5H9z"/>
-          </svg>
-        </span>
-        <span>Swiggy Corporate</span>
-      </div>
+        <div class="nav-item">
+          <span class="nav-icon">?</span>
+          <span>Help</span>
+        </div>
 
-      <div class="nav-search">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M10 2a8 8 0 105.3 14l4.4 4.4 1.4-1.4-4.4-4.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
-          </svg>
-        </span>
-        <input type="text" id="searchInput" placeholder="Search restaurants..." />
-      </div>
+        <div class="nav-item">
+          <span class="nav-icon">♟</span>
+          <span>Megha</span>
+        </div>
 
-      <div class="nav-item">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M20 12v8H4v-8H2V8h4.2C5.5 7.4 5 6.6 5 5.7 5 4.2 6.2 3 7.7 3c1.4 0 2.5 1 4.3 3.1C13.8 4 14.9 3 16.3 3 17.8 3 19 4.2 19 5.7c0 .9-.5 1.7-1.2 2.3H22v4h-2zM6 18h5v-6H6v6zm7 0h5v-6h-5v6zM7.7 5C7.3 5 7 5.3 7 5.7c0 .7.8 1.2 2.8 1.2C8.8 5.7 8.2 5 7.7 5zm8.6 0c-.5 0-1.1.7-2.1 1.9 2 0 2.8-.5 2.8-1.2 0-.4-.3-.7-.7-.7z"/>
-          </svg>
-        </span>
-        <span>Offers</span>
-        <span class="new-tag">NEW</span>
+        <div class="nav-item cart" onclick="toggleCart()">
+          <span class="cart-box-icon">0</span>
+          <span>Cart</span>
+        </div>
       </div>
 
-      <div class="nav-item">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 17a7 7 0 110-14 7 7 0 010 14zm-1-4h2v2h-2v-2zm1-9c-2 0-3.5 1.2-3.5 3h2c0-.7.6-1.2 1.4-1.2.9 0 1.5.5 1.5 1.3 0 .7-.4 1-1.2 1.5-1.2.7-1.8 1.5-1.8 3h1.9c0-.8.3-1.2 1.2-1.7 1.1-.7 2-1.4 2-2.8C15.5 7.2 14 6 12 6z"/>
-          </svg>
-        </span>
-        <span>Help</span>
-      </div>
-
-      <div class="nav-item">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5z"/>
-          </svg>
-        </span>
-        <span>Profile</span>
-      </div>
-
-      <div class="nav-item cart" onclick="toggleCart()">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M7 18c-1.1 0-1.9.9-1.9 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.2 14.5h8.9c.8 0 1.5-.4 1.8-1.1L21 6H6.2L5.7 4H2V2h5.2l1 4H21l-3.4 8.1c-.3.8-1.1 1.4-2 1.4H8.1L7 17h12v2H6.9c-1.5 0-2.5-1.6-1.8-2.9l2.1-1.6z"/>
-          </svg>
-        </span>
-        <span>Cart</span>
-        <span id="cartCount">0</span>
-      </div>
     </div>
   </header>
+
+  <div class="scroll-navbar" id="scrollNavbar">
+    <div class="scroll-navbar-inner">
+
+      <div class="sort-wrapper">
+        <button class="sort-btn" onclick="toggleSortDropdown()">
+          Sort By <span>⌄</span>
+        </button>
+
+        <div class="sort-dropdown" id="sortDropdown">
+          <label class="sort-option">
+            <span>Relevance<br>(Default)</span>
+            <input type="radio" name="sort" value="default" checked>
+          </label>
+
+          <label class="sort-option">
+            <span>Delivery Time</span>
+            <input type="radio" name="sort" value="time">
+          </label>
+
+          <label class="sort-option">
+            <span>Rating</span>
+            <input type="radio" name="sort" value="rating">
+          </label>
+
+          <label class="sort-option">
+            <span>Cost: Low to High</span>
+            <input type="radio" name="sort" value="low">
+          </label>
+
+          <label class="sort-option">
+            <span>Cost: High to Low</span>
+            <input type="radio" name="sort" value="high">
+          </label>
+
+          <button class="apply-btn" onclick="applySort()">Apply</button>
+        </div>
+      </div>
+
+      <div class="scroll-search">
+        <input type="text" id="scrollSearchInput" placeholder="Search for restaurant and food">
+        <span>⌕</span>
+      </div>
+
+    </div>
+  </div>
 
   <div class="cart-box" id="cartBox">
     <div class="cart-header">
@@ -103,17 +117,35 @@
   </div>
 
   <section class="categories">
-    <h2>What's on your mind?</h2>
+    <div class="section-title-row">
+      <h2>What's on your mind?</h2>
 
-    <div class="category-container">
+      <div class="category-arrows">
+        <button onclick="scrollCategories('left')">←</button>
+        <button onclick="scrollCategories('right')">→</button>
+      </div>
+    </div>
+
+    <div class="category-container" id="categoryContainer">
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&auto=format&fit=crop" alt="North Indian">
+        <p>North Indian</p>
+      </div>
+
       <div class="category-card">
         <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&auto=format&fit=crop" alt="Pizza">
-        <p>Pizza</p>
+        <p>Pizzas</p>
       </div>
 
       <div class="category-card">
         <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop" alt="Burger">
-        <p>Burger</p>
+        <p>Burgers</p>
+      </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop" alt="Cakes">
+        <p>Cakes</p>
       </div>
 
       <div class="category-card">
@@ -122,209 +154,266 @@
       </div>
 
       <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=400&auto=format&fit=crop" alt="Dosa">
-        <p>Dosa</p>
+        <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=400&auto=format&fit=crop" alt="South Indian">
+        <p>South Indian</p>
       </div>
 
       <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&auto=format&fit=crop" alt="Noodles">
-        <p>Noodles</p>
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&auto=format&fit=crop" alt="Desserts">
+        <p>Desserts</p>
       </div>
 
       <div class="category-card">
-        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&auto=format&fit=crop" alt="Dessert">
-        <p>Dessert</p>
+        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&auto=format&fit=crop" alt="Chinese">
+        <p>Chinese</p>
       </div>
 
       <div class="category-card">
         <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=400&auto=format&fit=crop" alt="Momos">
         <p>Momos</p>
       </div>
+
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&auto=format&fit=crop" alt="Rolls">
+        <p>Rolls</p>
+      </div>
+
     </div>
   </section>
 
   <section class="restaurants">
-    <h2>Top restaurants near you</h2>
+    <div class="section-title-row">
+      <h2>Top restaurant chains in Delhi</h2>
 
-    <div class="restaurant-grid">
+      <div class="category-arrows">
+        <button>←</button>
+        <button>→</button>
+      </div>
+    </div>
 
-      <div class="restaurant-card" data-name="Burger King">
+    <div class="restaurant-grid" id="restaurantGrid">
+
+      <div class="restaurant-card" data-name="KFC" data-rating="4.4" data-time="15" data-cost="250" onclick="addToCart('KFC', 250)">
         <div class="image-box">
-          <span class="sale-tag">20% OFF</span>
-          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop" alt="Burger King">
+          <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=700&auto=format&fit=crop" alt="KFC">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">50% OFF</span>
+        </div>
+        <div class="card-content">
+          <h3>KFC</h3>
+          <p class="rating"><span>★</span> 4.4 • 10-15 mins</p>
+          <p>Burgers, Fast Food, Rolls & Wraps</p>
+          <p>Connaught Place</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Burger King" data-rating="4.3" data-time="20" data-cost="180" onclick="addToCart('Burger King', 180)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&auto=format&fit=crop" alt="Burger King">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">ITEMS AT ₹59</span>
         </div>
         <div class="card-content">
           <h3>Burger King</h3>
-          <p class="rating">⭐ 4.2 • 30 mins</p>
-          <p>Burgers, Fast Food</p>
-          <p class="timer">Fast delivery available</p>
-          <p>₹150 for one</p>
-          <button onclick="addToCart('Burger King', 150)">Add to Cart</button>
+          <p class="rating"><span>★</span> 4.3 • 15-20 mins</p>
+          <p>Burgers, American</p>
+          <p>Connaught Place</p>
         </div>
       </div>
 
-      <div class="restaurant-card" data-name="Pizza Hub">
+      <div class="restaurant-card" data-name="McDonald's" data-rating="4.5" data-time="20" data-cost="200" onclick="addToCart('McDonald’s', 200)">
         <div class="image-box">
-          <span class="sale-tag">SALE</span>
-          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop" alt="Pizza Hub">
+          <img src="https://images.unsplash.com/photo-1619881590738-a111d176d906?w=700&auto=format&fit=crop" alt="McDonald's">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">70% OFF</span>
         </div>
         <div class="card-content">
-          <h3>Pizza Hub</h3>
-          <p class="rating">⭐ 4.5 • 25 mins</p>
-          <p>Pizza, Italian</p>
-          <p class="timer">Order in 10 mins for hot delivery</p>
-          <p>₹200 for one</p>
-          <button onclick="addToCart('Pizza Hub', 200)">Add to Cart</button>
+          <h3>McDonald's</h3>
+          <p class="rating"><span>★</span> 4.5 • 15-20 mins</p>
+          <p>American, Fast Food, Beverages</p>
+          <p>Connaught Place</p>
         </div>
       </div>
 
-      <div class="restaurant-card" data-name="Biryani House">
+      <div class="restaurant-card" data-name="Domino's Pizza" data-rating="4.4" data-time="25" data-cost="260" onclick="addToCart('Domino’s Pizza', 260)">
         <div class="image-box">
-          <span class="sale-tag">15% OFF</span>
-          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop" alt="Biryani House">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700&auto=format&fit=crop" alt="Domino's Pizza">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">ITEMS AT ₹59</span>
         </div>
         <div class="card-content">
-          <h3>Biryani House</h3>
-          <p class="rating">⭐ 4.4 • 35 mins</p>
-          <p>Biryani, North Indian</p>
-          <p class="timer">Limited-time offer</p>
-          <p>₹180 for one</p>
-          <button onclick="addToCart('Biryani House', 180)">Add to Cart</button>
+          <h3>Domino's Pizza</h3>
+          <p class="rating"><span>★</span> 4.4 • 20-25 mins</p>
+          <p>Pizzas, Italian, Pastas, Desserts</p>
+          <p>Connaught Place</p>
         </div>
       </div>
 
-      <div class="restaurant-card" data-name="South Dosa Point">
+      <div class="restaurant-card" data-name="Rolls Mania" data-rating="4.2" data-time="25" data-cost="160" onclick="addToCart('Rolls Mania', 160)">
         <div class="image-box">
-          <span class="veg-tag">VEG</span>
-          <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=600&auto=format&fit=crop" alt="Dosa">
-        </div>
-        <div class="card-content">
-          <h3>South Dosa Point</h3>
-          <p class="rating">⭐ 4.1 • 20 mins</p>
-          <p>Dosa, South Indian</p>
-          <p class="fresh">Fresh vegetarian meals</p>
-          <p>₹120 for one</p>
-          <button onclick="addToCart('South Dosa Point', 120)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="restaurant-card" data-name="Chinese Bowl">
-        <div class="image-box">
-          <span class="sale-tag">HOT</span>
-          <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop" alt="Chinese Bowl">
-        </div>
-        <div class="card-content">
-          <h3>Chinese Bowl</h3>
-          <p class="rating">⭐ 4.0 • 28 mins</p>
-          <p>Noodles, Chinese</p>
-          <p class="timer">Trending now</p>
-          <p>₹160 for one</p>
-          <button onclick="addToCart('Chinese Bowl', 160)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="restaurant-card" data-name="Sweet Treats">
-        <div class="image-box">
-          <span class="veg-tag">FRESH</span>
-          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&auto=format&fit=crop" alt="Sweet Treats">
-        </div>
-        <div class="card-content">
-          <h3>Sweet Treats</h3>
-          <p class="rating">⭐ 4.6 • 18 mins</p>
-          <p>Cakes, Desserts</p>
-          <p class="fresh">Freshly made desserts</p>
-          <p>₹100 for one</p>
-          <button onclick="addToCart('Sweet Treats', 100)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="restaurant-card" data-name="Tandoori Nights">
-        <div class="image-box">
-          <span class="sale-tag">30% OFF</span>
-          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&auto=format&fit=crop" alt="Tandoori Nights">
-        </div>
-        <div class="card-content">
-          <h3>Tandoori Nights</h3>
-          <p class="rating">⭐ 4.3 • 32 mins</p>
-          <p>Tandoori, North Indian</p>
-          <p class="timer">Popular tonight</p>
-          <p>₹220 for one</p>
-          <button onclick="addToCart('Tandoori Nights', 220)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="restaurant-card" data-name="Healthy Bowl">
-        <div class="image-box">
-          <span class="veg-tag">HEALTHY</span>
-          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&fit=crop" alt="Healthy Bowl">
-        </div>
-        <div class="card-content">
-          <h3>Healthy Bowl</h3>
-          <p class="rating">⭐ 4.7 • 22 mins</p>
-          <p>Salads, Healthy Food</p>
-          <p class="fresh">Fresh and healthy</p>
-          <p>₹190 for one</p>
-          <button onclick="addToCart('Healthy Bowl', 190)">Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="restaurant-card" data-name="Rolls Mania">
-        <div class="image-box">
-          <span class="sale-tag">HOT</span>
-          <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&auto=format&fit=crop" alt="Rolls Mania">
+          <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=700&auto=format&fit=crop" alt="Rolls Mania">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">40% OFF</span>
         </div>
         <div class="card-content">
           <h3>Rolls Mania</h3>
-          <p class="rating">⭐ 4.2 • 26 mins</p>
-          <p>Rolls, Wraps</p>
-          <p class="timer">Best seller</p>
-          <p>₹130 for one</p>
-          <button onclick="addToCart('Rolls Mania', 130)">Add to Cart</button>
+          <p class="rating"><span>★</span> 4.2 • 20-25 mins</p>
+          <p>Rolls, Wraps, Fast Food</p>
+          <p>Connaught Place</p>
         </div>
       </div>
 
-      <div class="restaurant-card" data-name="Cafe Coffee Day">
+      <div class="restaurant-card" data-name="Chaayos" data-rating="4.6" data-time="15" data-cost="120" onclick="addToCart('Chaayos', 120)">
         <div class="image-box">
-          <span class="sale-tag">NEW</span>
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&auto=format&fit=crop" alt="Cafe Coffee Day">
+          <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=700&auto=format&fit=crop" alt="Chaayos">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">30% OFF</span>
         </div>
         <div class="card-content">
-          <h3>Cafe Coffee Day</h3>
-          <p class="rating">⭐ 4.3 • 15 mins</p>
-          <p>Coffee, Snacks</p>
-          <p class="timer">Quick bites</p>
-          <p>₹140 for one</p>
-          <button onclick="addToCart('Cafe Coffee Day', 140)">Add to Cart</button>
+          <h3>Chaayos</h3>
+          <p class="rating"><span>★</span> 4.6 • 10-15 mins</p>
+          <p>Tea, Snacks, Beverages</p>
+          <p>Connaught Place</p>
         </div>
       </div>
 
-      <div class="restaurant-card" data-name="Ice Cream Studio">
+      <div class="restaurant-card" data-name="Beverage Bar" data-rating="4.3" data-time="20" data-cost="140" onclick="addToCart('Beverage Bar', 140)">
         <div class="image-box">
-          <span class="veg-tag">FRESH</span>
-          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&auto=format&fit=crop" alt="Ice Cream Studio">
+          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=700&auto=format&fit=crop" alt="Beverage Bar">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">ITEMS AT ₹99</span>
         </div>
         <div class="card-content">
-          <h3>Ice Cream Studio</h3>
-          <p class="rating">⭐ 4.8 • 16 mins</p>
-          <p>Ice Cream, Desserts</p>
-          <p class="fresh">Fresh desserts</p>
-          <p>₹110 for one</p>
-          <button onclick="addToCart('Ice Cream Studio', 110)">Add to Cart</button>
+          <h3>Beverage Bar</h3>
+          <p class="rating"><span>★</span> 4.3 • 15-20 mins</p>
+          <p>Shakes, Coffee, Beverages</p>
+          <p>Connaught Place</p>
         </div>
       </div>
 
-      <div class="restaurant-card" data-name="Momo Nation">
+      <div class="restaurant-card" data-name="Bakingo" data-rating="4.6" data-time="25" data-cost="220" onclick="addToCart('Bakingo', 220)">
         <div class="image-box">
-          <span class="sale-tag">25% OFF</span>
-          <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=600&auto=format&fit=crop" alt="Momo Nation">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&auto=format&fit=crop" alt="Bakingo">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">60% OFF</span>
         </div>
         <div class="card-content">
-          <h3>Momo Nation</h3>
-          <p class="rating">⭐ 4.1 • 24 mins</p>
-          <p>Momos, Street Food</p>
-          <p class="timer">Limited-time offer</p>
-          <p>₹125 for one</p>
-          <button onclick="addToCart('Momo Nation', 125)">Add to Cart</button>
+          <h3>Bakingo</h3>
+          <p class="rating"><span>★</span> 4.6 • 20-25 mins</p>
+          <p>Bakery, Desserts, Cakes</p>
+          <p>Connaught Place</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Pizza Hut" data-rating="4.3" data-time="25" data-cost="240" onclick="addToCart('Pizza Hut', 240)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700&auto=format&fit=crop" alt="Pizza Hut">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">50% OFF</span>
+        </div>
+        <div class="card-content">
+          <h3>Pizza Hut</h3>
+          <p class="rating"><span>★</span> 4.3 • 20-25 mins</p>
+          <p>Pizzas, Pastas, Italian</p>
+          <p>Rajiv Chowk</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Subway" data-rating="4.1" data-time="20" data-cost="190" onclick="addToCart('Subway', 190)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=700&auto=format&fit=crop" alt="Subway">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">20% OFF</span>
+        </div>
+        <div class="card-content">
+          <h3>Subway</h3>
+          <p class="rating"><span>★</span> 4.1 • 15-20 mins</p>
+          <p>Healthy Food, Sandwiches</p>
+          <p>Connaught Place</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Haldiram's" data-rating="4.5" data-time="30" data-cost="210" onclick="addToCart('Haldiram’s', 210)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700&auto=format&fit=crop" alt="Haldiram's">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">₹125 OFF</span>
+        </div>
+        <div class="card-content">
+          <h3>Haldiram's</h3>
+          <p class="rating"><span>★</span> 4.5 • 25-30 mins</p>
+          <p>North Indian, Snacks, Sweets</p>
+          <p>Karol Bagh</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Biryani Blues" data-rating="4.4" data-time="35" data-cost="230" onclick="addToCart('Biryani Blues', 230)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=700&auto=format&fit=crop" alt="Biryani Blues">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">60% OFF</span>
+        </div>
+        <div class="card-content">
+          <h3>Biryani Blues</h3>
+          <p class="rating"><span>★</span> 4.4 • 30-35 mins</p>
+          <p>Biryani, Hyderabadi, Mughlai</p>
+          <p>Dwarka</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="La Pino'z Pizza" data-rating="4.2" data-time="30" data-cost="260" onclick="addToCart('La Pinoz Pizza', 260)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=700&auto=format&fit=crop" alt="La Pinoz Pizza">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">ITEMS AT ₹99</span>
+        </div>
+        <div class="card-content">
+          <h3>La Pino'z Pizza</h3>
+          <p class="rating"><span>★</span> 4.2 • 25-30 mins</p>
+          <p>Pizzas, Italian, Fast Food</p>
+          <p>Lajpat Nagar</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Chinese Wok" data-rating="4.0" data-time="35" data-cost="180" onclick="addToCart('Chinese Wok', 180)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=700&auto=format&fit=crop" alt="Chinese Wok">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">70% OFF</span>
+        </div>
+        <div class="card-content">
+          <h3>Chinese Wok</h3>
+          <p class="rating"><span>★</span> 4.0 • 30-35 mins</p>
+          <p>Chinese, Asian, Noodles</p>
+          <p>Delhi</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="The Belgian Waffle" data-rating="4.6" data-time="20" data-cost="170" onclick="addToCart('The Belgian Waffle', 170)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=700&auto=format&fit=crop" alt="The Belgian Waffle">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">BUY 1 GET 1</span>
+        </div>
+        <div class="card-content">
+          <h3>The Belgian Waffle</h3>
+          <p class="rating"><span>★</span> 4.6 • 15-20 mins</p>
+          <p>Waffles, Desserts, Beverages</p>
+          <p>Connaught Place</p>
+        </div>
+      </div>
+
+      <div class="restaurant-card" data-name="Starbucks" data-rating="4.5" data-time="15" data-cost="280" onclick="addToCart('Starbucks', 280)">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&auto=format&fit=crop" alt="Starbucks">
+          <div class="image-gradient"></div>
+          <span class="offer-strip">30% OFF</span>
+        </div>
+        <div class="card-content">
+          <h3>Starbucks</h3>
+          <p class="rating"><span>★</span> 4.5 • 10-15 mins</p>
+          <p>Coffee, Beverages, Snacks</p>
+          <p>Connaught Place</p>
         </div>
       </div>
 
@@ -332,20 +421,20 @@
   </section>
 
   <footer class="footer">
-    <div class="app-download">
+    <div class="footer-app-section">
       <h2>For better experience, download the Swiggy app now</h2>
 
-      <div class="store-buttons">
-        <div class="store-btn">
-          <span>▶</span>
+      <div class="app-buttons">
+        <div class="app-btn">
+          <span class="play-icon">▶</span>
           <div>
             <p>GET IT ON</p>
             <h3>Google Play</h3>
           </div>
         </div>
 
-        <div class="store-btn">
-          <span></span>
+        <div class="app-btn">
+          <span class="apple-icon"></span>
           <div>
             <p>Download on the</p>
             <h3>App Store</h3>
@@ -354,9 +443,14 @@
       </div>
     </div>
 
-    <div class="footer-content">
+    <div class="footer-main">
       <div class="footer-brand">
-        <h2><span class="footer-icon">S</span> Swiggy</h2>
+        <div class="footer-logo-row">
+          <div class="footer-logo">
+            <img src="swiggy-logo.png" alt="Swiggy Logo">
+          </div>
+          <h2>Swiggy</h2>
+        </div>
         <p>© 2026 Swiggy Limited</p>
       </div>
 
@@ -392,7 +486,10 @@
         <a href="#">Delhi</a>
         <a href="#">Mumbai</a>
         <a href="#">Pune</a>
-        <button class="city-btn">679 cities</button>
+
+        <button class="cities-btn">
+          679 cities <span>⌄</span>
+        </button>
       </div>
 
       <div class="footer-column">
@@ -401,13 +498,14 @@
         <a href="#">Swiggy News</a>
         <a href="#">Snackables</a>
 
-        <h3 class="footer-subtitle">Social Links</h3>
+        <h3 class="footer-subtitle social-heading">Social Links</h3>
+
         <div class="social-links">
           <span>in</span>
           <span>◎</span>
           <span>f</span>
-          <span>𝕏</span>
-          <span>▶</span>
+          <span>p</span>
+          <span>♥</span>
         </div>
       </div>
     </div>
